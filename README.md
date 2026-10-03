@@ -1,55 +1,34 @@
 # LocalBites
 
-A mobile-friendly guide to affordable places to eat, drink coffee, and study near campus. Built with React, Vite, Tailwind CSS, React Router, and Supabase.
+LocalBites helps students find restaurants, coffee shops, and study spots around Cal Poly and downtown San Luis Obispo. It brings nearby places into one searchable, mobile-friendly directory.
+
+## What you can do
+
+- Search places by name, cuisine, or tag, and filter by category, tags, or price when available.
+- Open a place to see its address, listed hours, directions, tags, and student reviews.
+- Create an account to write one review per place and save favorites.
+- Return to your saved places from the Favorites page.
+
+The current directory includes 17 real San Luis Obispo listings sourced from OpenStreetMap. Hours may change, so check them before visiting. Place photos are clearly marked as illustrative. Prices are shown only when verified data is available, and ratings come only from LocalBites reviews.
+
+## Architecture
+
+LocalBites is a React single-page app built with Vite. React Router connects the Discover, Place Details, Favorites, and authentication pages. Tailwind CSS handles the responsive layout, and shared components keep cards, filters, reviews, and navigation consistent.
+
+The UI calls functions in `src/lib/api.js` for places, reviews, and favorites. `src/context/AuthContext.jsx` manages the signed-in user. This keeps page components focused on display and interaction while the data layer handles storage.
+
+With no service credentials, the app runs in preview mode: `src/data/realPlaces.json` supplies the place directory, and browser local storage holds the preview user session, reviews, and favorites. When a hosted backend is configured, the same UI uses persistent authentication and data instead. The preview sign-in accepts any email and password and is intended only for local testing.
+
+The place snapshot is generated from OpenStreetMap extracts by `scripts/refresh_places.py`. Stable place IDs keep reviews and favorites linked across data refreshes. The app does not request OpenStreetMap data on every page visit. Place data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright) under the ODbL.
 
 ## Run locally
 
 ```bash
 npm install
-cp .env.example .env.local
 npm run dev
 ```
 
-Open the URL printed by Vite. With empty environment variables, the app starts in **preview mode** with a cached snapshot of 17 real San Luis Obispo places from OpenStreetMap. You can use any email and password to try sign-in, reviews, and favorites; preview data stays in your browser's local storage. Preview authentication is only for local UI testing and does not check passwords.
-
-## Connect Supabase
-
-1. Create a Supabase project.
-2. In the project **SQL Editor**, run [`supabase/schema.sql`](supabase/schema.sql), then [`supabase/real_places.sql`](supabase/real_places.sql). The first file creates tables, RLS policies, a profile creation trigger, and the image storage bucket. The second imports 17 San Luis Obispo listings from OpenStreetMap extracts. If you ran an earlier version of LocalBites, it hides the old Berkeley and fictional seed rows without deleting their reviews or favorites. Supabase starts with no reviews, so ratings appear as **New** until users post reviews.
-3. In **Authentication → Providers**, enable Email. Choose whether to require email confirmation. If confirmation is enabled, users must follow the email link before logging in.
-4. In **Project Settings → API**, copy the project URL and anon/publishable key into `.env.local`:
-
-   ```env
-   VITE_SUPABASE_URL=https://your-project.supabase.co
-   VITE_SUPABASE_ANON_KEY=your-anon-or-publishable-key
-   ```
-
-5. Restart `npm run dev`. Never put a service role key in the frontend.
-
-The SQL script creates a public `place-images` storage bucket. The OpenStreetMap listings do not include photos, so the app shows clearly labeled illustrative category photos. To use your own images later, upload to `place-images/<your-user-id>/...` and set `places.image_url` to the image's public URL. There is no image upload or place editing UI in this MVP.
-
-## Real place data
-
-The 17 names, locations, cuisine types, and available hours in [`src/data/realPlaces.json`](src/data/realPlaces.json) came from OpenStreetMap extracts around Cal Poly and downtown San Luis Obispo on October 2, 2026. Each place links to its OpenStreetMap entry. Source records can be incomplete or outdated, so visitors should verify hours before making a trip. Photos are illustrative. Prices are left unknown and the budget filter is disabled until verified price information is added. LocalBites ratings are based only on LocalBites reviews; none are fabricated or imported from another review service.
-
-To refresh the curated places, obtain small OSM XML extracts for the Cal Poly and downtown SLO areas from an appropriate OpenStreetMap data provider or Overpass, then run:
-
-```bash
-python3 scripts/refresh_places.py --osm-xml path/to/cal-poly.osm --osm-xml path/to/downtown-slo.osm
-```
-
-This regenerates the preview JSON and `supabase/real_places.sql`. Run the SQL in Supabase to update the database. The script uses stable IDs based on each OpenStreetMap element, so existing reviews and favorites remain linked after a refresh. It only imports the curated element IDs listed in the script; inspect the refreshed data before publishing. The website does not query public OSM servers on every visit.
-
-Place data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), available under the ODbL. The attribution also appears in the site footer.
-
-## Features
-
-- Search and filter by category and verified tags; budget filtering activates when prices are available
-- Place details with hours, address, directions, ratings, and newest reviews
-- Email/password sign-up, login, and logout through Supabase
-- One review per user per place, enforced by a database unique constraint
-- Private favorites with add/remove controls
-- Loading, empty, and error states
+Open the local URL printed by Vite, usually `http://localhost:5173/`. No credentials are needed to explore the preview.
 
 ## Build
 
@@ -57,5 +36,3 @@ Place data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyrig
 npm run build
 npm run preview
 ```
-
-For deployment with React Router, configure the host to serve `index.html` for unknown routes. Check current hours, prices, and business status before publishing it as a dependable local directory.
