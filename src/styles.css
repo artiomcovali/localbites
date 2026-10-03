@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: 'DM Sans', sans-serif; color: #27312b; background: #fffaf5; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+
+@layer components {
+  .button-primary { @apply inline-block rounded-xl bg-orange px-5 py-3 font-bold text-white shadow-sm transition hover:bg-orangeDark; }
+  .button-outline { @apply inline-block rounded-xl border border-line bg-white px-5 py-3 font-bold text-ink transition hover:border-orange hover:text-orange; }
+  .nav-link { @apply text-sm font-bold transition; }
+  .mobile-link { @apply flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-bold text-ink hover:bg-sage; }
+  .filter-pill { @apply rounded-full border border-line bg-white px-3.5 py-2 text-xs font-bold text-muted transition hover:border-orange hover:text-orange; }
+  .filter-pill-active { @apply border-orange bg-[#fff1e9] text-orangeDark; }
+  .input { @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink outline-none transition placeholder:text-[#9ba39b] focus:border-orange focus:ring-2 focus:ring-orange/10; }
+  .input-wrap { @apply flex items-center gap-3 rounded-xl border border-line bg-white px-4 py-3 text-sm text-muted transition focus-within:border-orange focus-within:ring-2 focus-within:ring-orange/10; }
+}
+.hero-dot { position: absolute; border-radius: 999px; pointer-events: none; }
+.hero-dot-one { width: 360px; height: 360px; left: -180px; top: -230px; background: #f5e0c7; opacity: .55; }
+.hero-dot-two { width: 420px; height: 420px; right: -220px; bottom: -280px; background: #dce8d6; opacity: .6; }

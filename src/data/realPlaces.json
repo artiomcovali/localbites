@@ -1,0 +1,361 @@
+[
+  {
+    "id": "00c37d42-8724-5777-b178-64573a39f785",
+    "name": "201 Kitchen",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Japanese",
+    "description": "Japanese in downtown San Luis Obispo.",
+    "address": "857 Higuera Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": "Mon–Tue 11:00–15:00,16:30–21:00; Wed 11:30–15:00,16:30–21:00; Thu 11:00–22:00; Fri–Sat 11:00–21:00; Sun 11:00–20:00",
+    "image_url": null,
+    "tags": [
+      "japanese"
+    ],
+    "latitude": 35.2800267,
+    "longitude": -120.6623482,
+    "source_url": "https://www.openstreetmap.org/node/4929556822",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "4db451bf-80be-5ce6-b775-0b012be0b35e",
+    "name": "Coya Peruvian Food",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Peruvian",
+    "description": "Peruvian in downtown San Luis Obispo.",
+    "address": "851 Higuera Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "peruvian"
+    ],
+    "latitude": 35.2799265,
+    "longitude": -120.6625198,
+    "source_url": "https://www.openstreetmap.org/node/4929556720",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "48d122b0-e61f-523c-a217-004568ba853b",
+    "name": "Deltina Coffee",
+    "category": "coffee shop",
+    "price_level": null,
+    "cuisine": "Coffee",
+    "description": "Coffee near Cal Poly.",
+    "address": "1340 Taft Street, San Luis Obispo, CA",
+    "neighborhood": "Near Cal Poly",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "coffee"
+    ],
+    "latitude": 35.2911231,
+    "longitude": -120.6594506,
+    "source_url": "https://www.openstreetmap.org/node/12338209306",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "b6097998-ec6b-5204-b135-8059771ea8c7",
+    "name": "Field Day Coffee",
+    "category": "coffee shop",
+    "price_level": null,
+    "cuisine": "Coffee",
+    "description": "Coffee in downtown San Luis Obispo.",
+    "address": "1185 Monterey Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "outdoor seating",
+      "coffee"
+    ],
+    "latitude": 35.2829921,
+    "longitude": -120.6585486,
+    "source_url": "https://www.openstreetmap.org/node/4915399688",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "a9af24c6-aec7-5f28-8099-156f99815ec5",
+    "name": "Firestone Grill",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Barbecue",
+    "description": "Barbecue in downtown San Luis Obispo.",
+    "address": "1001 Higuera Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "outdoor seating",
+      "barbecue"
+    ],
+    "latitude": 35.2811459,
+    "longitude": -120.660239,
+    "source_url": "https://www.openstreetmap.org/node/4929341319",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "f8f24731-d140-587f-b5c7-4091f483926c",
+    "name": "Jaffa Cafe",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Mediterranean",
+    "description": "Mediterranean in downtown San Luis Obispo.",
+    "address": "1308 Monterey Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "outdoor seating",
+      "mediterranean"
+    ],
+    "latitude": 35.284631,
+    "longitude": -120.657058,
+    "source_url": "https://www.openstreetmap.org/node/1449700955",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "af632d4e-1a74-5274-8e4c-79cd25e4be80",
+    "name": "Kona's Deli",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Sandwiches",
+    "description": "Sandwiches near Cal Poly.",
+    "address": "977 Foothill Boulevard, San Luis Obispo, CA",
+    "neighborhood": "Near Cal Poly",
+    "hours": "10:30–19:00",
+    "image_url": null,
+    "tags": [
+      "sandwiches"
+    ],
+    "latitude": 35.293632,
+    "longitude": -120.668885,
+    "source_url": "https://www.openstreetmap.org/node/2396485350",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "0c8e0bac-e02f-50af-9529-7a132ece6ed8",
+    "name": "Kreuzberg",
+    "category": "study spot",
+    "price_level": null,
+    "cuisine": "Coffee",
+    "description": "Coffee in downtown San Luis Obispo.",
+    "address": "685 Higuera Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "wifi",
+      "good for studying",
+      "outdoor seating",
+      "coffee"
+    ],
+    "latitude": 35.2785962,
+    "longitude": -120.6647166,
+    "source_url": "https://www.openstreetmap.org/node/4917195526",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "2ffdff2e-61ef-5586-8f9f-60b75dfe3d36",
+    "name": "Linnaea's Cafe",
+    "category": "study spot",
+    "price_level": null,
+    "cuisine": "Coffee",
+    "description": "Coffee in downtown San Luis Obispo.",
+    "address": "1110 Garden Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": "Sat, Sun 08:00–20:00; Mon–Wed 07:30–17:00; Thu, Fri 07:30–20:00",
+    "image_url": null,
+    "tags": [
+      "wifi",
+      "good for studying",
+      "outdoor seating",
+      "coffee"
+    ],
+    "latitude": 35.2792164,
+    "longitude": -120.6631775,
+    "source_url": "https://www.openstreetmap.org/node/2368933719",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "1da46f27-e323-50c9-8faa-5fb6fa6ce764",
+    "name": "Raku Ramen",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Noodles, Japanese, Ramen",
+    "description": "Noodles, Japanese, Ramen near Cal Poly.",
+    "address": "799 Foothill Boulevard, San Luis Obispo, CA",
+    "neighborhood": "Near Cal Poly",
+    "hours": "Mon–Sun 11:00–21:00",
+    "image_url": null,
+    "tags": [
+      "noodles",
+      "japanese",
+      "ramen"
+    ],
+    "latitude": 35.293859,
+    "longitude": -120.6711271,
+    "source_url": "https://www.openstreetmap.org/node/10195974685",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "4196b4e2-15cf-5b45-bbaa-90b50c6c61a6",
+    "name": "Scout Coffee",
+    "category": "coffee shop",
+    "price_level": null,
+    "cuisine": "Coffee",
+    "description": "Coffee near Cal Poly.",
+    "address": "880 Foothill Boulevard, San Luis Obispo, CA",
+    "neighborhood": "Near Cal Poly",
+    "hours": "Sat 07:30–16:30; Sun–Fri 07:30–14:30",
+    "image_url": null,
+    "tags": [
+      "wifi",
+      "good for studying",
+      "outdoor seating",
+      "coffee"
+    ],
+    "latitude": 35.2944168,
+    "longitude": -120.669871,
+    "source_url": "https://www.openstreetmap.org/node/4423745891",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "0ac51486-f7aa-5560-b104-ca0c561bf84a",
+    "name": "Sequel Tea",
+    "category": "coffee shop",
+    "price_level": null,
+    "cuisine": "Tea",
+    "description": "Tea on the Cal Poly campus.",
+    "address": "1 Grand Avenue, San Luis Obispo, CA",
+    "neighborhood": "On campus",
+    "hours": "Mon–Thu 07:30–16:30; Fri 07:30–16:00",
+    "image_url": null,
+    "tags": [
+      "tea"
+    ],
+    "latitude": 35.3033415,
+    "longitude": -120.662752,
+    "source_url": "https://www.openstreetmap.org/node/4436986554",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "d3959d73-2467-5dc8-a1b0-34ea7f28af9c",
+    "name": "SLO Donut Company",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Donuts",
+    "description": "Donuts near Cal Poly.",
+    "address": "793 Foothill Blvd, San Luis Obispo, CA",
+    "neighborhood": "Near Cal Poly",
+    "hours": "24/7",
+    "image_url": null,
+    "tags": [
+      "late night",
+      "donuts"
+    ],
+    "latitude": 35.2935655,
+    "longitude": -120.671987,
+    "source_url": "https://www.openstreetmap.org/node/2261957369",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "cffa271a-744c-5242-b23e-826a45438a25",
+    "name": "Taqueria Santa Cruz Express",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Mexican",
+    "description": "Mexican in downtown San Luis Obispo.",
+    "address": "1330 Monterey Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "outdoor seating",
+      "mexican"
+    ],
+    "latitude": 35.284664,
+    "longitude": -120.657011,
+    "source_url": "https://www.openstreetmap.org/node/2597849163",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "4f88814b-7358-5b53-b8d0-33cd8fd8b735",
+    "name": "Thai Palace",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Thai",
+    "description": "Thai in downtown San Luis Obispo.",
+    "address": "1015 Court Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "thai"
+    ],
+    "latitude": 35.2811307,
+    "longitude": -120.6616097,
+    "source_url": "https://www.openstreetmap.org/node/2456191191",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "a6e3c34f-4b54-5ea8-80fe-b0e8d6518508",
+    "name": "Typhoon",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Bubble tea, Thai, Asian",
+    "description": "Bubble tea, Thai, Asian near Cal Poly.",
+    "address": "858 Foothill Boulevard, San Luis Obispo, CA",
+    "neighborhood": "Near Cal Poly",
+    "hours": "Mon–Sun 11:00–21:00",
+    "image_url": null,
+    "tags": [
+      "outdoor seating",
+      "bubble tea",
+      "thai",
+      "asian"
+    ],
+    "latitude": 35.294416,
+    "longitude": -120.6706114,
+    "source_url": "https://www.openstreetmap.org/node/10195974691",
+    "average_rating": null,
+    "review_count": 0
+  },
+  {
+    "id": "c4b52e39-6bd0-53b1-8040-f1953c65ff7c",
+    "name": "Woodstock's Pizza",
+    "category": "restaurant",
+    "price_level": null,
+    "cuisine": "Pizza",
+    "description": "Pizza in downtown San Luis Obispo.",
+    "address": "1000 Higuera Street, San Luis Obispo, CA",
+    "neighborhood": "Downtown SLO",
+    "hours": null,
+    "image_url": null,
+    "tags": [
+      "pizza"
+    ],
+    "latitude": 35.2813137,
+    "longitude": -120.6607197,
+    "source_url": "https://www.openstreetmap.org/node/748732681",
+    "average_rating": null,
+    "review_count": 0
+  }
+]
